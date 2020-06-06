@@ -14,7 +14,12 @@ class StorytellerSimple:
         self.num_words = num_words
         #topic (?)
         self.prompt = prompt
+        #first-time runthrough
         setupModel()
+        self.session = gpt2.start_tf_sess()
+        #story generator, give parameters if necessary
+        runGenerator()
+        loadRun()
 
 
     def setupModel(size="124M"):
@@ -23,6 +28,16 @@ class StorytellerSimple:
         gpt2.download_gpt2(model_name=size)
 
     def runGenerator(num_words=self.num_words, variance=0.9):
-        session = gpt2.start_tf_sess()
+        session = self.session
         gpt2.load_gpt2(session)
-        
+        gpt2.finetune(session, dataset=self.source, model_name='124M')
+        sentence = self.prompt
+        default_sentence = "The quick brown fox jumped over the lazy dog"
+        if sentence == "DEFAULT":
+            sentence = default_sentence
+        gpt2.generate(session, length=num_words, temperature=variance, top_k=1, top_p=0.9,
+              run_name='run1', prefix=sentence, return_as_list=True)
+
+    def loadRun():
+        gpt2.load_gpt2(self.session, run_name='run1')
+        gpt2.generate_to_file(self.session, filepath='generated.txt', length=self.num_words, temperature=0.9, prefix=self.prompt)
