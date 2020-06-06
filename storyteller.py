@@ -22,3 +22,5 @@ class Storyteller:
         vocab_size = 10000
         config = GPT2Config(vocab_size=vocab_size)
         return config
+
+        
