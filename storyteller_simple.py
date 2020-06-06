@@ -41,3 +41,10 @@ class StorytellerSimple:
     def loadRun():
         gpt2.load_gpt2(self.session, run_name='run1')
         gpt2.generate_to_file(self.session, filepath='generated.txt', length=self.num_words, temperature=0.9, prefix=self.prompt)
+
+
+def main():
+    story = StorytellerSimple('reddit_comments.txt', 200, "Today is a beautiful day")
+
+if __name__ == "__main__":
+    main()
