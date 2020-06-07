@@ -1,0 +1,99 @@
+.header {
+  text-align: center;
+  padding:20px;
+  font-size: xxx-large;
+  color: white;
+  font-family: 'Hammersmith One', sans-serif;
+  margin-bottom: 7%;
+}
+.bigbox {
+  margin: -30px 30px 30px 30px;
+  color: white;
+  /*background-color: #455a64;*/
+  background-color: #322D39;
+  opacity: 1;
+}
+.imagetitle {
+  background:url('books.png');
+  background-size: cover;
+}
+.box {
+  color: white;
+}
+body {
+  background-color:  #4B88A2;
+  color: white;
+}
+embed:focus {
+  color: white;
+  background-color: white;
+}
+#inputs {
+  width: 75%;
+  padding: 12px 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-sizing: border-box;
+  border: none;
+  border-top-left-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom: solid black;
+  /*color: lemonchiffon;*/
+  transition: background-color 1s ease-in-out;
+  font-family: 'Volkhov', serif;
+  align-self: center;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #322D39;/* #37474f;*/
+  height: 50px;
+}
+
+#inputs:hover{
+  background-color: rgba(137, 43, 226, 0.499);
+  border-bottom: none;
+  border-radius: 10px;
+  opacity: 50%;
+}
+
+#inputslabel{
+  font-family: 'Bentham', serif;
+  margin-right: 12.5%;
+  margin-left: 12.5%;
+  text-align: center;
+  font-size: x-large;
+
+}
+label {
+  margin: 20px;
+}
+#submitbutton{
+  border: solid;
+  padding: 12px;
+  width: 30%;
+  margin-right: 35%;
+  margin-left: 35%;
+  border-radius: 8px;
+  background-color: #3f6579;
+  transition: background-color 1s ease-in-out, border 2s ease-in-out;
+  font-family: 'Bentham', serif;
+  fill: moccasin;
+  }
+
+#submitbutton:hover{
+  border-color: lightskyblue;
+  background-color: lightskyblue;
+}
+.edu {
+  width: 90%;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #000000
+}
+p {
+  color: white;
+  font-family: 'Hammersmith One', sans-serif;
+  size: medium;
+}

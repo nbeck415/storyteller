@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap" rel="stylesheet"> 
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&family=Volkhov:wght@700&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+    <div class='bigbox'>
+      <div class='imagetitle'>
+        <div class='header'><h1>Storyteller</h1></div>
+        <script src="script.js"></script>
+      </div>
+      <div class='putinclass'>
+        <form action="output.html">
+        <label id="inputslabel" for="inputs">How are you feeling today? Talk to me.</label><br>
+        <input type="text" id="inputs" name="fname"><br><br>
+        <label id="inputslabel" for="inputs">An object, thought, or idea to spark the imagination: </label><br>
+        <input type="text" id="inputs" name="fname"><br><br><br><br>
+        <input id="submitbutton" type="submit" value="Tell me a story!">
+        </form>
+      </div> <br><br><br><br>
+      <div class='edu'>
+        <p>fictionwriting.tech is a website that generates the beginning of a story based on a few words from user input. It uses Open AI’s GPT-2 model to build on the user input, and generates a short scene. We trained the model on stories from reddit’s /r/writingprompts using the praw library to scrape them. This project both demonstrates the voice and creativity of AI, which we hope will educate and inspire people.</p>
+      </div><br><br>
+      
+
+      <!----<h1><strong>
+      <?php 
+      echo file_get_contents("generated3.txt"); 
+      ?>
+    </strong></h1>---->
+
+    </div>
+  </body>
+</html>
