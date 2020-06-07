@@ -1,9 +1,6 @@
 # fictionwriting.tech
 
-The intent was to create a website. Our backend includes using OpenAI's GPT-2 simple trained on reddit comments scraped using Spaw from /r/writingprompts.
-
-Introduction
-Dependencies
+The intent was to create a website. Our backend includes using OpenAI's GPT-2 simple trained on reddit comments scraped using Praw from /r/writingprompts.
 
 SET-UP
 ----------------------
