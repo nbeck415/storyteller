@@ -50,8 +50,8 @@ class StorytellerSimple:
         gpt2.generate_to_file(session, destination_path='generated5.txt', length=self.num_words, temperature=0.9, prefix=self.prompt)
 
 
-def main():
-    story = StorytellerSimple('reddit_comments.txt', 200, "beautiful rain sad saturday")
+def main(gen_text):
+    story = StorytellerSimple('reddit_comments.txt', 200, gen_text)
 
 if __name__ == "__main__":
-    main()
+    main(sys.argv[1]) #index 0 is the name of the file, index 1 is the first argument from the command line
