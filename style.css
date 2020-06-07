@@ -22,7 +22,9 @@
 }
 .box {
   color: white;
-  font-family: 
+  font-family:'Hammersmith One', sans-serif;
+  font-size: large;
+  text-align:center;
 }
 body {
   background-color:  #4B88A2;
