@@ -15,7 +15,7 @@ class StorytellerSimple:
         #topic (?)
         self.prompt = prompt
         #first-time runthrough
-        #self.setupModel()
+        self.setupModel()
         #print('setup complete')
         self.session = gpt2.start_tf_sess()
         #story generator, give parameters if necessary
@@ -44,12 +44,13 @@ class StorytellerSimple:
               run_name='run1', prefix=sentence, return_as_list=True)
 
     def loadRun(self):
-        gpt2.load_gpt2(self.session, run_name='run1')
-        gpt2.generate_to_file(self.session, filepath='generated.txt', length=self.num_words, temperature=0.9, prefix=self.prompt)
+        session = gpt2.start_tf_sess()
+        gpt2.load_gpt2(session)#, run_name='run1')
+        gpt2.generate_to_file(session, destination_path='generated5.txt', length=self.num_words, temperature=0.9, prefix=self.prompt)
 
 
 def main():
-    story = StorytellerSimple('reddit_comments.txt', 200, "Today is a beautiful day")
+    story = StorytellerSimple('reddit_comments.txt', 200, "beautiful rain sad saturday")
 
 if __name__ == "__main__":
     main()
