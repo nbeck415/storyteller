@@ -4,6 +4,7 @@
 import torch
 #import numpy as np
 import gpt_2_simple as gpt2
+import sys
 
 class StorytellerSimple:
 
