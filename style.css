@@ -14,7 +14,7 @@
   opacity: 1;
 }
 .imagetitle {
-  background:url('books.png');
+  background-image:url('books.png');
   background-size: cover;
 }
 .box {
