@@ -1,9 +1,11 @@
-#README
+# fictionwriting.tech
 
-*Introduction
-*Dependencies
+The intent was to create a website. Our backend includes using OpenAI's GPT-2 simple trained on reddit comments scraped using Spaw from /r/writingprompts.
 
-INTRODUCTION
+Introduction
+Dependencies
+
+SET-UP
 ----------------------
 storyteller_simple.py was run on Windows 10 Pro 1909 os build 18363.836
 with Python verion 3.7.7 and Tensorflow 1.15
