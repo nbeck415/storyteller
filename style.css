@@ -12,6 +12,9 @@
   /*background-color: #455a64;*/
   background-color: #322D39;
   opacity: 1;
+  font-family:'Hammersmith One', sans-serif;
+  font-size: large;
+  text-align:center;
 }
 .imagetitle {
   background-image:url('books.png');
@@ -19,10 +22,14 @@
 }
 .box {
   color: white;
+  font-family: 
 }
 body {
   background-color:  #4B88A2;
   color: white;
+  font-family:'Hammersmith One', sans-serif;
+  font-size: large;
+  text-align:center;
 }
 embed:focus {
   color: white;
