@@ -24,10 +24,7 @@ for submission in subreddit.top(limit=1):
     if('[OT]' in submission.title):
         continue
     
-    #print(i, submission.title)
-    submission.comment_sort = "top"
-    top_level_comments = list(submission.comments)
-    
+    #print(i, submission.title)  
     submission.comments.replace_more(limit=0)
     comments = submission.comments.list()
     
