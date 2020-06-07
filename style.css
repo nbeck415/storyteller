@@ -31,7 +31,7 @@ body {
   color: white;
   font-family:'Hammersmith One', sans-serif;
   font-size: large;
-/*   text-align:center; */
+  text-align:center;
 }
 embed:focus {
   color: white;
