@@ -17,7 +17,11 @@ it generated reddit_comments.txt
 DEPENDENCIES
 ----------------------
 OpenAI's GPT-2 simple
+
 Tensorflow
+
 Torch
+
 Praw
+
 ReGex
